@@ -1,13 +1,8 @@
-# ignore "no keep *.txt" in all directory
-no keep *.txt
-
-# ignore "no keep *.txt" in root directory
-/no keep *.txt
-
-# ignore "no keep *.txt" in directory "keep/no keep" in root directory
-/keep/no keep/no keep *.txt
-
-# ignore "all" file in directory "no keep" in root directory
-/no keep/
-
-/node_modules
+.DS_Store
+node_modules/
+dist/
+npm-debug.log
+yarn-error.log
+test/unit/coverage
+test/e2e/reports
+selenium-debug.log

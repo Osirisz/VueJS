@@ -1,28 +1,19 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
-  </div>
+<div>
+  App Component
+  <br />
+  <router-link to="/" tag="div">Home</router-link><!--linkไปที่หน้าHome tag="div" คือให้ทำหน้าที่เป็นtag div ด้วย-->
+  <br />
+  <router-link to="/about">About</router-link>
+  <router-view></router-view><!--เป็น tag ชื่อตายตัวเลยที่แสดงview ของ router -->
+</div>
 </template>
-
 <script>
-import Hello from './components/Hello'
+export default{
 
-export default {
-  name: 'app',
-  components: {
-    Hello
-  }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
